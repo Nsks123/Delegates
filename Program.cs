@@ -1,40 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using System;
 
-namespace Delegates
+class GFG
 {
-    public delegate void rectdelegate(double width, double height);
-   
-    class program
+
+    public delegate void petanim(string pet);
+
+    
+    static public void Main()
     {
-        public void getarea(double width, double height)
+
+        
+        petanim p = delegate (string mypet)
         {
-            Console.WriteLine(width + height);
-        }
-        public  void getperimeter(double width, double height)
-        {
-            Console.WriteLine(2*(width + height));
-
-
-        }
-    }
-
-
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-                program d = new program();
-            rectdelegate obj = new rectdelegate(d.getarea);
-            obj = obj + d.getperimeter;
-            obj.Invoke(12.34, 56.78);
-            obj.Invoke(14.50, 60.78);
-                
-
-                
-        }
+            Console.WriteLine("My favorite pet is: {0}",
+                                                mypet);
+        };
+        p("Dog");
     }
 }
