@@ -1,0 +1,7 @@
+C:\Users\hp\Desktop\LocoBuzz\Training\Delegates\bin\Debug\Delegates.exe.config
+C:\Users\hp\Desktop\LocoBuzz\Training\Delegates\bin\Debug\Delegates.exe
+C:\Users\hp\Desktop\LocoBuzz\Training\Delegates\bin\Debug\Delegates.pdb
+C:\Users\hp\Desktop\LocoBuzz\Training\Delegates\obj\Debug\Delegates.csproj.AssemblyReference.cache
+C:\Users\hp\Desktop\LocoBuzz\Training\Delegates\obj\Debug\Delegates.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\LocoBuzz\Training\Delegates\obj\Debug\Delegates.exe
+C:\Users\hp\Desktop\LocoBuzz\Training\Delegates\obj\Debug\Delegates.pdb
