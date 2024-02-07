@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace Delegates
 {
-    public delegate void adddelegate(int x, int y);
-    public delegate string addstring(string A, string B);
+    public delegate void rectdelegate(double width, double height);
+   
     class program
     {
-        public void addnums(int x, int y)
+        public void getarea(double width, double height)
         {
-            Console.WriteLine(x + y);
+            Console.WriteLine(width + height);
         }
-        public static string addstrings(string A, string B)
+        public  void getperimeter(double width, double height)
         {
-            return A + B;
+            Console.WriteLine(2*(width + height));
+
 
         }
     }
@@ -27,12 +28,13 @@ namespace Delegates
         static void Main(string[] args)
         {
                 program d = new program();
+            rectdelegate obj = new rectdelegate(d.getarea);
+            obj = obj + d.getperimeter;
+            obj.Invoke(12.34, 56.78);
+            obj.Invoke(14.50, 60.78);
+                
 
-                adddelegate ad = new adddelegate(d.addnums);
-                ad(2,3);
-                addstring b = new addstring(program.addstrings);
-                string str = program.addstrings("sunil" , "kumar");
-                Console.WriteLine(str);
+                
         }
     }
 }
