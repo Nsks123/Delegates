@@ -2,24 +2,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-class GFG
+namespace Lambda
 {
-    static public void Main()
+    public delegate string lambdaexpression(string s1);
+    class Lambda
     {
-        List<int> list = new List<int>()
+
+        static public void Main()
         {
-            1,2,3,4,5,6,7,8,9,10,11,12,13,14
-        };
-        List<int> list2 = list.FindAll(x=>x%2==0);
-        foreach (int x in list2)
-        {
-            Console.WriteLine(x);
+            lambdaexpression x = (s1) =>
+            {
+                return "hi " + s1 + " good morning.";
+            };
+            string str = x("sunil kumar");
+            Console.WriteLine(str);
+
+            Console.ReadLine();
+
+
+
+
+
         }
-        Console.ReadLine();
-        
-
-
-        
-       
     }
 }
+
+
+
